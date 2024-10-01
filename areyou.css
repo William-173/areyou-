@@ -1,0 +1,54 @@
+/* Basic styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Center content */
+#content {
+    text-align: center;
+    color: white;
+}
+
+/* Question styling */
+#question {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Reset button style */
+#resetBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Rainbow background */
+body.rainbow {
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    animation: rainbowAnimation 5s ease infinite;
+}
+
+/* Rainbow animation */
+@keyframes rainbowAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
